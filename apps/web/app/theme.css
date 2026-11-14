@@ -1,0 +1,72 @@
+/* Fitfolio brand layer — overrides the neutral shadcn base with an
+   energetic lime accent and adds chart tokens for the progression graph. */
+
+/* Data colors below are not free choices: the categorical macro slots and the
+   chart line were run through the dataviz validator (lightness band, chroma
+   floor, CVD separation, normal-vision floor, contrast vs surface) in BOTH
+   modes. Re-run it before changing any of them. */
+
+:root {
+  --primary: oklch(0.72 0.19 142);
+  --primary-foreground: oklch(0.16 0.02 150);
+  --ring: oklch(0.72 0.19 142);
+
+  /* Chart line is a darker step than --primary: the button lime is only
+     2.32:1 on white, this one is 3.41:1. */
+  --chart-1: oklch(0.62 0.17 142);
+  --chart-2: #2a78d6;
+  --chart-3: #eb6834;
+  --chart-4: #1baf7a;
+  --chart-5: #eda100;
+
+  /* Macro identity — validated categorical slots 1-3, all-pairs, light. */
+  --macro-protein: #2a78d6;
+  --macro-carb: #eb6834;
+  --macro-fat: #1baf7a;
+}
+
+.dark {
+  --primary: oklch(0.78 0.2 142);
+  --primary-foreground: oklch(0.16 0.02 150);
+  --ring: oklch(0.78 0.2 142);
+
+  --chart-1: oklch(0.78 0.2 142);
+  --chart-2: #3987e5;
+  --chart-3: #d95926;
+  --chart-4: #199e70;
+  --chart-5: #c98500;
+
+  /* Same three hues, re-stepped for the dark surface — not an auto-flip. */
+  --macro-protein: #3987e5;
+  --macro-carb: #d95926;
+  --macro-fat: #199e70;
+}
+
+@theme inline {
+  --color-macro-protein: var(--macro-protein);
+  --color-macro-carb: var(--macro-carb);
+  --color-macro-fat: var(--macro-fat);
+}
+
+/* Native-app feel: no rubber-band overscroll, no text inflation on rotate,
+   no tap highlight. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+/* Numeric inputs in the set logger: hide spinners, keep the value tabular. */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  font-variant-numeric: tabular-nums;
+}

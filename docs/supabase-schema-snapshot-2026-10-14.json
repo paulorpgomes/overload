@@ -1,0 +1,1687 @@
+{
+  "enums": [
+    {
+      "type": "exercise_category",
+      "label": "chest"
+    },
+    {
+      "type": "exercise_category",
+      "label": "back"
+    },
+    {
+      "type": "exercise_category",
+      "label": "legs"
+    },
+    {
+      "type": "exercise_category",
+      "label": "shoulders"
+    },
+    {
+      "type": "exercise_category",
+      "label": "arms"
+    },
+    {
+      "type": "exercise_category",
+      "label": "core"
+    },
+    {
+      "type": "exercise_category",
+      "label": "cardio"
+    },
+    {
+      "type": "exercise_category",
+      "label": "full_body"
+    },
+    {
+      "type": "goal",
+      "label": "lose_fat"
+    },
+    {
+      "type": "goal",
+      "label": "gain_muscle"
+    },
+    {
+      "type": "goal",
+      "label": "maintain"
+    },
+    {
+      "type": "goal",
+      "label": "performance"
+    },
+    {
+      "type": "meal_type",
+      "label": "breakfast"
+    },
+    {
+      "type": "meal_type",
+      "label": "lunch"
+    },
+    {
+      "type": "meal_type",
+      "label": "dinner"
+    },
+    {
+      "type": "meal_type",
+      "label": "snack"
+    }
+  ],
+  "grants": [
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "exercises",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "exercises",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "meal_items",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "meals",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "meals",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "post_likes",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "posts",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "posts",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "profiles",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "workout_sets",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "anon",
+      "privilege": "UPDATE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "DELETE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "INSERT"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "REFERENCES"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "SELECT"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "TRIGGER"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "TRUNCATE"
+    },
+    {
+      "table": "workouts",
+      "grantee": "authenticated",
+      "privilege": "UPDATE"
+    }
+  ],
+  "tables": [
+    {
+      "rls": true,
+      "name": "exercises"
+    },
+    {
+      "rls": true,
+      "name": "meal_items"
+    },
+    {
+      "rls": true,
+      "name": "meals"
+    },
+    {
+      "rls": true,
+      "name": "post_likes"
+    },
+    {
+      "rls": true,
+      "name": "posts"
+    },
+    {
+      "rls": true,
+      "name": "profiles"
+    },
+    {
+      "rls": true,
+      "name": "workout_sets"
+    },
+    {
+      "rls": true,
+      "name": "workouts"
+    }
+  ],
+  "columns": [
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "exercises",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "name",
+      "type": "text",
+      "table": "exercises",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "exercise_category",
+      "name": "category",
+      "type": "USER-DEFINED",
+      "table": "exercises",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "equipment",
+      "type": "text",
+      "table": "exercises",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "uuid",
+      "name": "created_by",
+      "type": "uuid",
+      "table": "exercises",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "bool",
+      "name": "is_public",
+      "type": "boolean",
+      "table": "exercises",
+      "default": "false",
+      "nullable": "NO"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "exercises",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "meal_items",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "meal_id",
+      "type": "uuid",
+      "table": "meal_items",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "meal_items",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "name",
+      "type": "text",
+      "table": "meal_items",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "quantity_g",
+      "type": "numeric",
+      "table": "meal_items",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "numeric",
+      "name": "calories",
+      "type": "numeric",
+      "table": "meal_items",
+      "default": "0",
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "protein_g",
+      "type": "numeric",
+      "table": "meal_items",
+      "default": "0",
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "carb_g",
+      "type": "numeric",
+      "table": "meal_items",
+      "default": "0",
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "fat_g",
+      "type": "numeric",
+      "table": "meal_items",
+      "default": "0",
+      "nullable": "NO"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "meal_items",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "meals",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "meals",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "date",
+      "name": "eaten_on",
+      "type": "date",
+      "table": "meals",
+      "default": "CURRENT_DATE",
+      "nullable": "NO"
+    },
+    {
+      "udt": "meal_type",
+      "name": "meal_type",
+      "type": "USER-DEFINED",
+      "table": "meals",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "name",
+      "type": "text",
+      "table": "meals",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "meals",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "post_id",
+      "type": "uuid",
+      "table": "post_likes",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "post_likes",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "post_likes",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "posts",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "posts",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "content",
+      "type": "text",
+      "table": "posts",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "workout_id",
+      "type": "uuid",
+      "table": "posts",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "posts",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "profiles",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "username",
+      "type": "text",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "text",
+      "name": "full_name",
+      "type": "text",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "text",
+      "name": "avatar_url",
+      "type": "text",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "goal",
+      "name": "goal",
+      "type": "USER-DEFINED",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "numeric",
+      "name": "height_cm",
+      "type": "numeric",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "numeric",
+      "name": "weight_kg",
+      "type": "numeric",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "date",
+      "name": "birth_date",
+      "type": "date",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "int4",
+      "name": "calorie_target",
+      "type": "integer",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "int4",
+      "name": "protein_target_g",
+      "type": "integer",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "int4",
+      "name": "carb_target_g",
+      "type": "integer",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "int4",
+      "name": "fat_target_g",
+      "type": "integer",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "onboarded_at",
+      "type": "timestamp with time zone",
+      "table": "profiles",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "profiles",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "workout_sets",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "workout_id",
+      "type": "uuid",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "exercise_id",
+      "type": "uuid",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "date",
+      "name": "performed_on",
+      "type": "date",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "int2",
+      "name": "set_number",
+      "type": "smallint",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "int2",
+      "name": "reps",
+      "type": "smallint",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "weight_kg",
+      "type": "numeric",
+      "table": "workout_sets",
+      "default": "0",
+      "nullable": "NO"
+    },
+    {
+      "udt": "numeric",
+      "name": "rpe",
+      "type": "numeric",
+      "table": "workout_sets",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "bool",
+      "name": "is_warmup",
+      "type": "boolean",
+      "table": "workout_sets",
+      "default": "false",
+      "nullable": "NO"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "workout_sets",
+      "default": "now()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "id",
+      "type": "uuid",
+      "table": "workouts",
+      "default": "gen_random_uuid()",
+      "nullable": "NO"
+    },
+    {
+      "udt": "uuid",
+      "name": "user_id",
+      "type": "uuid",
+      "table": "workouts",
+      "default": null,
+      "nullable": "NO"
+    },
+    {
+      "udt": "date",
+      "name": "performed_on",
+      "type": "date",
+      "table": "workouts",
+      "default": "CURRENT_DATE",
+      "nullable": "NO"
+    },
+    {
+      "udt": "text",
+      "name": "name",
+      "type": "text",
+      "table": "workouts",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "text",
+      "name": "notes",
+      "type": "text",
+      "table": "workouts",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "int4",
+      "name": "duration_min",
+      "type": "integer",
+      "table": "workouts",
+      "default": null,
+      "nullable": "YES"
+    },
+    {
+      "udt": "timestamptz",
+      "name": "created_at",
+      "type": "timestamp with time zone",
+      "table": "workouts",
+      "default": "now()",
+      "nullable": "NO"
+    }
+  ],
+  "indexes": [
+    {
+      "name": "exercises_category_idx",
+      "table": "exercises",
+      "definition": "CREATE INDEX exercises_category_idx ON public.exercises USING btree (category)"
+    },
+    {
+      "name": "exercises_created_by_idx",
+      "table": "exercises",
+      "definition": "CREATE INDEX exercises_created_by_idx ON public.exercises USING btree (created_by)"
+    },
+    {
+      "name": "exercises_global_name_idx",
+      "table": "exercises",
+      "definition": "CREATE UNIQUE INDEX exercises_global_name_idx ON public.exercises USING btree (lower(name)) WHERE (created_by IS NULL)"
+    },
+    {
+      "name": "exercises_pkey",
+      "table": "exercises",
+      "definition": "CREATE UNIQUE INDEX exercises_pkey ON public.exercises USING btree (id)"
+    },
+    {
+      "name": "exercises_user_name_idx",
+      "table": "exercises",
+      "definition": "CREATE UNIQUE INDEX exercises_user_name_idx ON public.exercises USING btree (created_by, lower(name)) WHERE (created_by IS NOT NULL)"
+    },
+    {
+      "name": "meal_items_meal_idx",
+      "table": "meal_items",
+      "definition": "CREATE INDEX meal_items_meal_idx ON public.meal_items USING btree (meal_id)"
+    },
+    {
+      "name": "meal_items_pkey",
+      "table": "meal_items",
+      "definition": "CREATE UNIQUE INDEX meal_items_pkey ON public.meal_items USING btree (id)"
+    },
+    {
+      "name": "meal_items_user_idx",
+      "table": "meal_items",
+      "definition": "CREATE INDEX meal_items_user_idx ON public.meal_items USING btree (user_id)"
+    },
+    {
+      "name": "meals_pkey",
+      "table": "meals",
+      "definition": "CREATE UNIQUE INDEX meals_pkey ON public.meals USING btree (id)"
+    },
+    {
+      "name": "meals_user_date_idx",
+      "table": "meals",
+      "definition": "CREATE INDEX meals_user_date_idx ON public.meals USING btree (user_id, eaten_on DESC)"
+    },
+    {
+      "name": "post_likes_pkey",
+      "table": "post_likes",
+      "definition": "CREATE UNIQUE INDEX post_likes_pkey ON public.post_likes USING btree (post_id, user_id)"
+    },
+    {
+      "name": "post_likes_user_idx",
+      "table": "post_likes",
+      "definition": "CREATE INDEX post_likes_user_idx ON public.post_likes USING btree (user_id)"
+    },
+    {
+      "name": "posts_created_at_idx",
+      "table": "posts",
+      "definition": "CREATE INDEX posts_created_at_idx ON public.posts USING btree (created_at DESC)"
+    },
+    {
+      "name": "posts_pkey",
+      "table": "posts",
+      "definition": "CREATE UNIQUE INDEX posts_pkey ON public.posts USING btree (id)"
+    },
+    {
+      "name": "posts_user_idx",
+      "table": "posts",
+      "definition": "CREATE INDEX posts_user_idx ON public.posts USING btree (user_id, created_at DESC)"
+    },
+    {
+      "name": "profiles_pkey",
+      "table": "profiles",
+      "definition": "CREATE UNIQUE INDEX profiles_pkey ON public.profiles USING btree (id)"
+    },
+    {
+      "name": "profiles_username_key",
+      "table": "profiles",
+      "definition": "CREATE UNIQUE INDEX profiles_username_key ON public.profiles USING btree (username)"
+    },
+    {
+      "name": "workout_sets_history_idx",
+      "table": "workout_sets",
+      "definition": "CREATE INDEX workout_sets_history_idx ON public.workout_sets USING btree (user_id, exercise_id, performed_on DESC)"
+    },
+    {
+      "name": "workout_sets_pkey",
+      "table": "workout_sets",
+      "definition": "CREATE UNIQUE INDEX workout_sets_pkey ON public.workout_sets USING btree (id)"
+    },
+    {
+      "name": "workout_sets_workout_id_exercise_id_set_number_key",
+      "table": "workout_sets",
+      "definition": "CREATE UNIQUE INDEX workout_sets_workout_id_exercise_id_set_number_key ON public.workout_sets USING btree (workout_id, exercise_id, set_number)"
+    },
+    {
+      "name": "workout_sets_workout_idx",
+      "table": "workout_sets",
+      "definition": "CREATE INDEX workout_sets_workout_idx ON public.workout_sets USING btree (workout_id)"
+    },
+    {
+      "name": "workouts_pkey",
+      "table": "workouts",
+      "definition": "CREATE UNIQUE INDEX workouts_pkey ON public.workouts USING btree (id)"
+    },
+    {
+      "name": "workouts_user_date_idx",
+      "table": "workouts",
+      "definition": "CREATE INDEX workouts_user_date_idx ON public.workouts USING btree (user_id, performed_on DESC)"
+    }
+  ],
+  "policies": [
+    {
+      "name": "exercises readable when public or own",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "exercises",
+      "using": "(is_public OR (created_by = ( SELECT auth.uid() AS uid)))",
+      "command": "SELECT"
+    },
+    {
+      "name": "users create own exercises",
+      "check": "((created_by = ( SELECT auth.uid() AS uid)) AND (NOT is_public))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "exercises",
+      "using": null,
+      "command": "INSERT"
+    },
+    {
+      "name": "users delete own exercises",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "exercises",
+      "using": "(created_by = ( SELECT auth.uid() AS uid))",
+      "command": "DELETE"
+    },
+    {
+      "name": "users update own exercises",
+      "check": "((created_by = ( SELECT auth.uid() AS uid)) AND (NOT is_public))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "exercises",
+      "using": "(created_by = ( SELECT auth.uid() AS uid))",
+      "command": "UPDATE"
+    },
+    {
+      "name": "users manage own meal items",
+      "check": "(EXISTS ( SELECT 1\n   FROM meals m\n  WHERE ((m.id = meal_items.meal_id) AND (m.user_id = ( SELECT auth.uid() AS uid)))))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "meal_items",
+      "using": "(EXISTS ( SELECT 1\n   FROM meals m\n  WHERE ((m.id = meal_items.meal_id) AND (m.user_id = ( SELECT auth.uid() AS uid)))))",
+      "command": "ALL"
+    },
+    {
+      "name": "users manage own meals",
+      "check": "(user_id = ( SELECT auth.uid() AS uid))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "meals",
+      "using": "(user_id = ( SELECT auth.uid() AS uid))",
+      "command": "ALL"
+    },
+    {
+      "name": "likes readable by authenticated users",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "post_likes",
+      "using": "true",
+      "command": "SELECT"
+    },
+    {
+      "name": "users manage own likes",
+      "check": "(user_id = ( SELECT auth.uid() AS uid))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "post_likes",
+      "using": null,
+      "command": "INSERT"
+    },
+    {
+      "name": "users remove own likes",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "post_likes",
+      "using": "(user_id = ( SELECT auth.uid() AS uid))",
+      "command": "DELETE"
+    },
+    {
+      "name": "posts readable by authenticated users",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "posts",
+      "using": "true",
+      "command": "SELECT"
+    },
+    {
+      "name": "users create own posts",
+      "check": "((user_id = ( SELECT auth.uid() AS uid)) AND ((workout_id IS NULL) OR (EXISTS ( SELECT 1\n   FROM workouts w\n  WHERE ((w.id = posts.workout_id) AND (w.user_id = ( SELECT auth.uid() AS uid)))))))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "posts",
+      "using": null,
+      "command": "INSERT"
+    },
+    {
+      "name": "users delete own posts",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "posts",
+      "using": "(user_id = ( SELECT auth.uid() AS uid))",
+      "command": "DELETE"
+    },
+    {
+      "name": "profiles are viewable by authenticated users",
+      "check": null,
+      "roles": [
+        "authenticated"
+      ],
+      "table": "profiles",
+      "using": "true",
+      "command": "SELECT"
+    },
+    {
+      "name": "users insert own profile",
+      "check": "(( SELECT auth.uid() AS uid) = id)",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "profiles",
+      "using": null,
+      "command": "INSERT"
+    },
+    {
+      "name": "users update own profile",
+      "check": "(( SELECT auth.uid() AS uid) = id)",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "profiles",
+      "using": "(( SELECT auth.uid() AS uid) = id)",
+      "command": "UPDATE"
+    },
+    {
+      "name": "users manage own sets",
+      "check": "(EXISTS ( SELECT 1\n   FROM workouts w\n  WHERE ((w.id = workout_sets.workout_id) AND (w.user_id = ( SELECT auth.uid() AS uid)))))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "workout_sets",
+      "using": "(EXISTS ( SELECT 1\n   FROM workouts w\n  WHERE ((w.id = workout_sets.workout_id) AND (w.user_id = ( SELECT auth.uid() AS uid)))))",
+      "command": "ALL"
+    },
+    {
+      "name": "users manage own workouts",
+      "check": "(user_id = ( SELECT auth.uid() AS uid))",
+      "roles": [
+        "authenticated"
+      ],
+      "table": "workouts",
+      "using": "(user_id = ( SELECT auth.uid() AS uid))",
+      "command": "ALL"
+    }
+  ],
+  "triggers": [
+    {
+      "name": "on_auth_user_created",
+      "table": "users",
+      "schema": "auth",
+      "definition": "CREATE TRIGGER on_auth_user_created AFTER INSERT ON auth.users FOR EACH ROW EXECUTE FUNCTION handle_new_user()"
+    },
+    {
+      "name": "meal_items_sync_user",
+      "table": "meal_items",
+      "schema": "public",
+      "definition": "CREATE TRIGGER meal_items_sync_user BEFORE INSERT OR UPDATE OF meal_id ON meal_items FOR EACH ROW EXECUTE FUNCTION sync_meal_item_user()"
+    },
+    {
+      "name": "workout_sets_sync_denorm",
+      "table": "workout_sets",
+      "schema": "public",
+      "definition": "CREATE TRIGGER workout_sets_sync_denorm BEFORE INSERT OR UPDATE OF workout_id ON workout_sets FOR EACH ROW EXECUTE FUNCTION sync_workout_set_denorm()"
+    },
+    {
+      "name": "workouts_cascade_date",
+      "table": "workouts",
+      "schema": "public",
+      "definition": "CREATE TRIGGER workouts_cascade_date AFTER UPDATE OF performed_on ON workouts FOR EACH ROW EXECUTE FUNCTION cascade_workout_date()"
+    }
+  ],
+  "functions": [
+    {
+      "name": "cascade_workout_date",
+      "definition": "CREATE OR REPLACE FUNCTION public.cascade_workout_date()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  if new.performed_on is distinct from old.performed_on then\r\n    update public.workout_sets\r\n       set performed_on = new.performed_on\r\n     where workout_id = new.id;\r\n  end if;\r\n  return new;\r\nend;\r\n$function$\n"
+    },
+    {
+      "name": "daily_nutrition",
+      "definition": "CREATE OR REPLACE FUNCTION public.daily_nutrition(p_day date DEFAULT CURRENT_DATE)\n RETURNS TABLE(calories numeric, protein_g numeric, carb_g numeric, fat_g numeric)\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$\r\n  select\r\n    coalesce(sum(i.calories), 0),\r\n    coalesce(sum(i.protein_g), 0),\r\n    coalesce(sum(i.carb_g), 0),\r\n    coalesce(sum(i.fat_g), 0)\r\n  from public.meal_items i\r\n  join public.meals m on m.id = i.meal_id\r\n  where m.user_id = (select auth.uid())\r\n    and m.eaten_on = p_day;\r\n$function$\n"
+    },
+    {
+      "name": "exercise_progression",
+      "definition": "CREATE OR REPLACE FUNCTION public.exercise_progression(p_exercise_id uuid, p_limit integer DEFAULT 30)\n RETURNS TABLE(performed_on date, top_weight_kg numeric, est_one_rm numeric, total_volume_kg numeric, total_sets bigint, total_reps bigint)\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$\r\n  select\r\n    s.performed_on,\r\n    max(s.weight_kg) as top_weight_kg,\r\n    round(max(s.weight_kg * (1 + s.reps::numeric / 40)), 1) as est_one_rm,\r\n    sum(s.weight_kg * s.reps) as total_volume_kg,\r\n    count(*) as total_sets,\r\n    sum(s.reps)::bigint as total_reps\r\n  from public.workout_sets s\r\n  where s.exercise_id = p_exercise_id\r\n    and s.user_id = (select auth.uid())\r\n    and not s.is_warmup\r\n  group by s.performed_on\r\n  order by s.performed_on desc\r\n  limit greatest(p_limit, 1);\r\n$function$\n"
+    },
+    {
+      "name": "handle_new_user",
+      "definition": "CREATE OR REPLACE FUNCTION public.handle_new_user()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  insert into public.profiles (id, full_name, avatar_url)\r\n  values (\r\n    new.id,\r\n    coalesce(\r\n      new.raw_user_meta_data ->> 'full_name',\r\n      new.raw_user_meta_data ->> 'name'\r\n    ),\r\n    coalesce(\r\n      new.raw_user_meta_data ->> 'avatar_url',\r\n      new.raw_user_meta_data ->> 'picture'\r\n    )\r\n  )\r\n  on conflict (id) do nothing;\r\n  return new;\r\nend;\r\n$function$\n"
+    },
+    {
+      "name": "rls_auto_enable",
+      "definition": "CREATE OR REPLACE FUNCTION public.rls_auto_enable()\n RETURNS event_trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'pg_catalog'\nAS $function$\nDECLARE\n  cmd record;\nBEGIN\n  FOR cmd IN\n    SELECT *\n    FROM pg_event_trigger_ddl_commands()\n    WHERE command_tag IN ('CREATE TABLE', 'CREATE TABLE AS', 'SELECT INTO')\n      AND object_type IN ('table','partitioned table')\n  LOOP\n     IF cmd.schema_name IS NOT NULL AND cmd.schema_name IN ('public') AND cmd.schema_name NOT IN ('pg_catalog','information_schema') AND cmd.schema_name NOT LIKE 'pg_toast%' AND cmd.schema_name NOT LIKE 'pg_temp%' THEN\n      BEGIN\n        EXECUTE format('alter table if exists %s enable row level security', cmd.object_identity);\n        RAISE LOG 'rls_auto_enable: enabled RLS on %', cmd.object_identity;\n      EXCEPTION\n        WHEN OTHERS THEN\n          RAISE LOG 'rls_auto_enable: failed to enable RLS on %', cmd.object_identity;\n      END;\n     ELSE\n        RAISE LOG 'rls_auto_enable: skip % (either system schema or not in enforced list: %.)', cmd.object_identity, cmd.schema_name;\n     END IF;\n  END LOOP;\nEND;\n$function$\n"
+    },
+    {
+      "name": "sync_meal_item_user",
+      "definition": "CREATE OR REPLACE FUNCTION public.sync_meal_item_user()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  select m.user_id into new.user_id\r\n    from public.meals m\r\n   where m.id = new.meal_id;\r\n\r\n  if not found then\r\n    raise exception 'meal % not found', new.meal_id;\r\n  end if;\r\n\r\n  return new;\r\nend;\r\n$function$\n"
+    },
+    {
+      "name": "sync_workout_set_denorm",
+      "definition": "CREATE OR REPLACE FUNCTION public.sync_workout_set_denorm()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  select w.user_id, w.performed_on\r\n    into new.user_id, new.performed_on\r\n    from public.workouts w\r\n   where w.id = new.workout_id;\r\n\r\n  if not found then\r\n    raise exception 'workout % not found', new.workout_id;\r\n  end if;\r\n\r\n  return new;\r\nend;\r\n$function$\n"
+    }
+  ],
+  "constraints": [
+    {
+      "name": "exercises_created_by_fkey",
+      "table": "exercises",
+      "definition": "FOREIGN KEY (created_by) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "exercises_owner_check",
+      "table": "exercises",
+      "definition": "CHECK (is_public OR created_by IS NOT NULL)"
+    },
+    {
+      "name": "exercises_pkey",
+      "table": "exercises",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "meal_items_calories_check",
+      "table": "meal_items",
+      "definition": "CHECK (calories >= 0::numeric)"
+    },
+    {
+      "name": "meal_items_carb_g_check",
+      "table": "meal_items",
+      "definition": "CHECK (carb_g >= 0::numeric)"
+    },
+    {
+      "name": "meal_items_fat_g_check",
+      "table": "meal_items",
+      "definition": "CHECK (fat_g >= 0::numeric)"
+    },
+    {
+      "name": "meal_items_meal_id_fkey",
+      "table": "meal_items",
+      "definition": "FOREIGN KEY (meal_id) REFERENCES meals(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "meal_items_pkey",
+      "table": "meal_items",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "meal_items_protein_g_check",
+      "table": "meal_items",
+      "definition": "CHECK (protein_g >= 0::numeric)"
+    },
+    {
+      "name": "meal_items_user_id_fkey",
+      "table": "meal_items",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "meals_pkey",
+      "table": "meals",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "meals_user_id_fkey",
+      "table": "meals",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "post_likes_pkey",
+      "table": "post_likes",
+      "definition": "PRIMARY KEY (post_id, user_id)"
+    },
+    {
+      "name": "post_likes_post_id_fkey",
+      "table": "post_likes",
+      "definition": "FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "post_likes_user_id_fkey",
+      "table": "post_likes",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "posts_content_check",
+      "table": "posts",
+      "definition": "CHECK (length(btrim(content)) >= 1 AND length(btrim(content)) <= 1000)"
+    },
+    {
+      "name": "posts_pkey",
+      "table": "posts",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "posts_user_id_fkey",
+      "table": "posts",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "posts_workout_id_fkey",
+      "table": "posts",
+      "definition": "FOREIGN KEY (workout_id) REFERENCES workouts(id) ON DELETE SET NULL"
+    },
+    {
+      "name": "profiles_id_fkey",
+      "table": "profiles",
+      "definition": "FOREIGN KEY (id) REFERENCES auth.users(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "profiles_pkey",
+      "table": "profiles",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "profiles_username_key",
+      "table": "profiles",
+      "definition": "UNIQUE (username)"
+    },
+    {
+      "name": "workout_sets_exercise_id_fkey",
+      "table": "workout_sets",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE RESTRICT"
+    },
+    {
+      "name": "workout_sets_pkey",
+      "table": "workout_sets",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "workout_sets_reps_check",
+      "table": "workout_sets",
+      "definition": "CHECK (reps >= 0)"
+    },
+    {
+      "name": "workout_sets_rpe_check",
+      "table": "workout_sets",
+      "definition": "CHECK (rpe IS NULL OR rpe >= 1::numeric AND rpe <= 10::numeric)"
+    },
+    {
+      "name": "workout_sets_set_number_check",
+      "table": "workout_sets",
+      "definition": "CHECK (set_number > 0)"
+    },
+    {
+      "name": "workout_sets_user_id_fkey",
+      "table": "workout_sets",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "workout_sets_weight_kg_check",
+      "table": "workout_sets",
+      "definition": "CHECK (weight_kg >= 0::numeric)"
+    },
+    {
+      "name": "workout_sets_workout_id_exercise_id_set_number_key",
+      "table": "workout_sets",
+      "definition": "UNIQUE (workout_id, exercise_id, set_number)"
+    },
+    {
+      "name": "workout_sets_workout_id_fkey",
+      "table": "workout_sets",
+      "definition": "FOREIGN KEY (workout_id) REFERENCES workouts(id) ON DELETE CASCADE"
+    },
+    {
+      "name": "workouts_duration_min_check",
+      "table": "workouts",
+      "definition": "CHECK (duration_min IS NULL OR duration_min >= 0)"
+    },
+    {
+      "name": "workouts_pkey",
+      "table": "workouts",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "name": "workouts_user_id_fkey",
+      "table": "workouts",
+      "definition": "FOREIGN KEY (user_id) REFERENCES profiles(id) ON DELETE CASCADE"
+    }
+  ]
+}
